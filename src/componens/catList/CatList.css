@@ -1,0 +1,59 @@
+.cat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 50px;
+
+  max-width: 1440px;
+}
+.cat-item {
+  width: 225px;
+  height: 225px;
+  margin: 19px;
+
+  position: relative;
+}
+.cat-item img {
+  width: 225px;
+  height: 225px;
+}
+.cat-item:hover {
+  /* width: 256px;
+  height: 256px;
+  background: #ffffff; */
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+  transform: scale(1.2);
+}
+.cat-item:hover .heart,
+.cat-item:hover .favorite-heart {
+  display: block;
+}
+.cat-item:hover img {
+  transform: scale(0.9);
+}
+
+.heart,
+.favorite-heart {
+  display: none;
+  position: absolute;
+  background: url(../../img/heart.svg) no-repeat;
+  bottom: 28px;
+  right: 28px;
+  width: 40px;
+  height: 40px;
+}
+.heart:hover {
+  background: url(../../img/heart1.svg) no-repeat;
+}
+.favorite-heart {
+  background: url(../../img/heart1.svg) no-repeat;
+}
+.selected {
+  transform: translateY(-5px);
+}
+.more {
+  margin: auto;
+}
