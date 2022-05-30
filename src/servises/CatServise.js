@@ -6,7 +6,7 @@ const useCatService = () => {
   const _apiBase = "https://api.thecatapi.com/v1/images/";
   const getCats = async (offset = 1) => {
     const res = await request(
-      `${_apiBase}search?limit=15&mime_types=jpg,png&order=Asc&size=small&page=${offset}`
+      `${_apiBase}search?limit=30&mime_types=jpg,png&order=Asc&size=small&page=${offset}`
     );
     return res.map(_transformCats);
   };

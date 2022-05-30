@@ -1,16 +1,12 @@
 import { useState } from "react";
 import Header from "../header/Header";
 import CatList from "../catList/CatList";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import FavoriteCatList from "../favoriteCatList/FavoriteCatList";
 
 function App() {
-  const [favoriteList, setFavoriteList] = useState([
-    "7aBMX8OUG",
-    "r5FkDFDre",
-    "Mz2bD3LLS",
-  ]);
+  const [favoriteList, setFavoriteList] = useState([]);
 
   return (
     <div className="App">
