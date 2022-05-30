@@ -42,6 +42,7 @@ const CatList = (props) => {
 
   useEffect(() => {
     onRequest(offset);
+    onRequest(offset);
   }, []);
 
   useEffect(() => {

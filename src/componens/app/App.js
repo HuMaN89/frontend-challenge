@@ -14,7 +14,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/"
+          path="/frontend-challenge"
           exact
           element={
             <CatList
