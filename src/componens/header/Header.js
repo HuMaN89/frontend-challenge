@@ -7,7 +7,7 @@ const Header = () => {
       <ul className="nav">
         <li className="nav-item">
           <NavLink
-            to="/"
+            to="/frontend-challenge"
             style={({ isActive }) => ({
               color: isActive ? "#ffffff" : "inherit",
               backgroundColor: isActive ? "#1e88e5" : "inherit",
